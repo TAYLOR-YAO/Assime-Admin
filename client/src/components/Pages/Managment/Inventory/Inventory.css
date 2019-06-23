@@ -1,0 +1,13 @@
+table, th, td {
+    border: 1px solid black;
+    padding: 0 5px;
+}
+
+.both-price{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+}
+.productsvalue{
+    margin-top: 10px;
+    font-size: 30px;
+}

@@ -1,0 +1,160 @@
+.payNow{
+    background: #6351ce;
+    border: #333 solid 3px;
+    padding: 5px;
+    font-size: 24px;
+}
+.payNow a{
+    color: #fff;
+}
+.order-item{
+    width: 75%;
+    margin: 10px auto;
+}
+
+.box{
+     width: 50%;
+     float: left;
+    border: 5px double #333;
+    height: 500px;
+    overflow: auto;
+     
+}
+.item-photo{
+    height: 100%;
+    width: 100%;
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+    transition: all 0.3s;
+}
+.item-photo:hover { 
+    transform: scale(1.2); 
+    z-index: 99;
+  }
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#333;
+    color: white;
+    opacity: 0.5;
+    height: 40px;
+}
+.table-body-row td button{
+    background: #333;
+    width: 40px;
+    color: #fff;
+
+}
+table{
+    border: 3px solid black;
+}
+
+tr:hover{
+    background: gray;
+    
+}
+
+
+
+.item-wrapper{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.item-card{
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    text-align: center;
+    margin: 10px 10px;
+  }
+  
+  .product-card> .show-Grid{
+      padding-bottom: 1.5em
+  }
+
+
+  @media only screen and (max-width: 425px) {
+    .table-data{
+        margin-left: -20px;
+    }
+    .order-item{
+        width: 100%;
+    }
+    .box{
+        height: 300px !important;   
+    }
+    #sider{
+     height: 270px !important;
+    }
+    .hidablePrice-detaile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .box{
+       height: 250px !important;   
+   }
+   #sider{
+    height: 270px !important;
+    }
+    .table-data{
+        margin-left: -50px;
+    }
+    .order-item{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .table-data{
+        margin-left: -70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .order-item{
+        width: 80%;
+        margin: 10px auto;
+    }
+    .box{
+         width: 100%;
+         float: left;
+        border: 5px double #333;
+        height: 500px;
+         
+    }
+    #sider{
+        height: 600px;
+    }
+    
+}
+@media only screen and (max-width: 1024px) {
+    .box{
+        height: 450px;
+         
+    }
+}

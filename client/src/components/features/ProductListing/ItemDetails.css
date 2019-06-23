@@ -1,0 +1,9 @@
+
+
+.itemDetailsWell{
+    position: relative;
+    bottom: 40px;
+}
+.itemDetailsWell p{
+    font-size: 18px;
+}

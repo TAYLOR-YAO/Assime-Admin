@@ -1,0 +1,33 @@
+{
+  "name": "assime228-admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon server.js\" \" cd ./client && yarn start\"",
+    "postinstall": "cd client && yarn install && yarn run build",
+    "start": "node server.js"
+  },
+  "repository": "https://github.com/TAYLOR-YAO/assime228.git",
+  "author": "TAYLOR YAO <yaotaylor25@gmail.com>",
+  "license": "MIT",
+  "homepage": "http://TAYLOR-YAO.github.io/assime228/",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.14.0",
+    "concurrently": "^3.6.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.6",
+    "mongoose": "^5.5.12",
+    "multer": "^1.4.1",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "stripe": "^6.36.0",
+    "validator": "^11.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+.marchandises-box h6{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.receiving-submut{
+    float: right;
+    color: #fff;
+    background: #6351ce;
+}
+.product-image{
+    width: 80%;
+    height: 250px;
+    margin: 5px auto !important;
+}
+.previews{
+    text-align: left;
+}

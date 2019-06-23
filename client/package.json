@@ -1,0 +1,42 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "firebase": "^5.3.1",
+    "font-awesome": "^4.7.0",
+    "jwt-decode": "^2.2.0",
+    "mdbreact": "^4.15.0",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.4",
+    "react-bootstrap-table": "^4.3.1",
+    "react-color": "^2.17.3",
+    "react-country-region-selector": "^1.4.3",
+    "react-dom": "^16.4.1",
+    "react-firebaseui": "^3.0.6",
+    "react-icons": "^2.2.7",
+    "react-mdl": "^1.11.0",
+    "react-phone-number-input": "^2.3.17",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-select": "^2.4.4",
+    "react-stripe-checkout": "^2.6.3",
+    "react-stripe-elements": "^2.0.1",
+    "react-super-responsive-table": "^4.3.12",
+    "reactcss": "^1.2.3",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000/"
+}

@@ -1,0 +1,28 @@
+
+.productCard{
+  width: 200px;
+  overflow: hidden;
+  margin: 5px 5px;
+  border-radius: 5px;
+  border: brown 3px solid;
+  float: left;
+  text-align: center;
+}
+.imagebox{
+  width: 100%;
+  height: 200px;
+}
+
+.imagebox img{
+  width: 100%;
+  height: 100%;
+}
+.item-information{
+  position: relative;
+  bottom: 15px;
+}
+
+.addToCart{
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
