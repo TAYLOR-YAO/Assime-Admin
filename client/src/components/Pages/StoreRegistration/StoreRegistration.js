@@ -106,27 +106,27 @@ class StoreRegistration extends Component {
 
       handleConfirmSubmit =(event)=>{
         event.preventDefault()
-        // axios.post("api/store/enroll",this.state).then(res=>{
-        //     this.setState({
-        //         company: res.data.company,
-        //         city: res.data.city,
-        //         countryOrState: res.data.country,
-        //         email: res.data.email,
-        //         tel: res.data.tel,
-        //         tel2: res.data.tel2,
-        //         zip: res.data.zip,
-        //         tax: res.data.tax.$numberDecimal ,
-        //         normalShipment: res.data.normalShipment,
-        //         express: res.data.express,
-        //         streetAddress: res.data.address,
-        //         showModal: true,
-        //         address: `${res.data.streetAddress} ${res.data.city} ${res.data.countryOrState} ${res.data.zip}`
-        //         // storeID: res.data._id,
+        axios.post("api/store/enroll",this.state).then(res=>{
+            this.setState({
+                company: res.data.company,
+                city: res.data.city,
+                countryOrState: res.data.country,
+                email: res.data.email,
+                tel: res.data.tel,
+                tel2: res.data.tel2,
+                zip: res.data.zip,
+                tax: res.data.tax.$numberDecimal ,
+                normalShipment: res.data.normalShipment,
+                express: res.data.express,
+                streetAddress: res.data.address,
+                showModal: true,
+                address: `${res.data.streetAddress} ${res.data.city} ${res.data.countryOrState} ${res.data.zip}`
+                // storeID: res.data._id,
 
-        //     })
-        // console.log("RESPONSE:  ", res.data)
-        // localStorage.setItem("createdStore", JSON.stringify(res.data))
-        // }); 
+            })
+        console.log("RESPONSE:  ", res.data)
+        localStorage.setItem("createdStore", JSON.stringify(res.data))
+        }); 
 
         this.setState({ confirmSubmit: false,
                 showModal: true

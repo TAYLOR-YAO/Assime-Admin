@@ -4,9 +4,8 @@ import store from "../Config/Store";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 import StoreRegistration from "../Pages/StoreRegistration";
 import Login from "../Pages/Login";
-// import Home from "../Pages/UserPages/HomePages";
 import Office from "../Pages/Managment/Office";
-import Landing from "../Pages/Landing/landing";
+// import Landing from "../Pages/Landing/landing";
 import Register from "../Pages/Register/Register";
 
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
@@ -17,9 +16,9 @@ import setAdminAuthToken from "../Utils/setAdminAuthToken";
 import { setCurrentAdmin, logoutAdmin } from "../Utils/Actions";
 
 // Check for token to keep user logged in
-if (localStorage.jwtToken) {
+if (localStorage.admin_jwtToken) {
     // Set auth token header auth
-    const token = localStorage.jwtToken;
+    const token = localStorage.admin_jwtToken;
     setAdminAuthToken(token);
     // Decode token and get user info and exp
     const decoded = jwt_decode(token);
@@ -37,7 +36,7 @@ if (localStorage.jwtToken) {
 
 const Router =()=>(
     <Switch>
-        <Route exact path="/" component={Landing} />
+        <PrivateRoute exact path="/" component={Office} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <PrivateRoute exact path="/dashboard" component={Office} />
