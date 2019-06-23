@@ -32,7 +32,7 @@ app.use (express.static("client/build"))
 //Connection to mongoDB
 const mongoose = require('mongoose');
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/auth-assime', ()=>{
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://assime:assime228@ds341837.mlab.com:41837/heroku_tk9srqsq', ()=>{
     console.log("Succesfuly Connected to MongoDB")
 });
 
